@@ -1,0 +1,108 @@
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 100px hsla(211, 71%, 70%, 0.691);
+            box-shadow: inset 0 0 100px hsla(211, 71%, 70%, 0.691);
+  }
+
+.upload-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    padding: 10px 20px;
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 100px hsla(211, 71%, 70%, 0.2);
+            box-shadow: inset 0 0 100px hsla(211, 71%, 70%, 0.2);
+}
+
+.upload-btn-wrapper{
+    position: relative;
+    padding: 0 20px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.search-wrapper{
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color:white;
+    color: 	#372f2f;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.search-box-wrapper{
+    padding-left: 40px;
+    background-color:white;
+    color: 	#372f2f;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.title-style {
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Arial Black";
+
+  }
+
+.sub-title-style {
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: 	#372f2f;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.custom-label-title-style{
+    padding-left: 20px;
+    padding-top: 10px;
+    color: 	#372f2f;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.search-box{
+    color:black;
+    text-align: left;
+    font-size: 15px;
+    width: 300px;
+    background-color: whitesmoke;
+    border-width:2px;
+    border-radius: 10px;
+    padding: 5px;
+    border-style:solid;
+    border-color:#287EC7;
+}
+
+.upload-btn{
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: transparent;
+}
+
+.upload-btn p{
+    padding-top:10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:orangered;
+}
+
+.search-box-wrapper p{
+    padding-top:10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:orangered;
+}
+
+.micro-btn{
+    background-color: transparent;
+}
+
+.search-btn{
+    background-color: transparent;
+}

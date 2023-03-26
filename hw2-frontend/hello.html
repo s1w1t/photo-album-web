@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Photo Album</title>
+
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1341.0.min.js"></script>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles -->
+        <link href="./assets/css/main.css" rel="stylesheet">
+
+        <!-- api gateway generated sdk -->
+        <script src="./assets/js/sdk/lib/axios/dist/axios.standalone.js"></script>
+        <script src="./assets/js/sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+        <script src="./assets/js/sdk/lib/CryptoJS/rollups/sha256.js"></script>
+        <script src="./assets/js/sdk/lib/CryptoJS/components/hmac.js"></script>
+        <script src="./assets/js/sdk/lib/CryptoJS/components/enc-base64.js"></script>
+        <script src="./assets/js/sdk/lib/url-template/url-template.js"></script>
+        <script src="./assets/js/sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+        <script src="./assets/js/sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+        <script src="./assets/js/sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+        <script src="./assets/js/sdk/lib/apiGatewayCore/utils.js"></script>
+
+        <script src="./assets/js/sdk/apigClient.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <div class="site-wrapper">
+            <div class="web-title">
+                <h1 class="title-style">Photo Album</h1>
+            </div>
+        </div>
+
+
+        <div class="upload-wrapper">
+            <h3 class="sub-title-style">Upload Image</h3>
+
+            <div class="upload-btn-wrapper">
+                <input type="file" id="photo-upload"/>
+            </div>
+
+            <div class="custom-label-title-style">    
+                <label for="custom-label">Enter Custom Labels: </label><br>
+                <input type="text" id="custom-label" name="custom-label" size="30"><br>
+            </div>
+
+            <div class="upload-btn">
+                <button type="submit" class="micro-btn" onclick="uploadPhoto()" >Upload</button>
+                <p id="upload-msg"></p>
+            </div>
+        </div>
+
+        <div class="search-wrapper">
+            <h3 class="sub-title-style">Search Image</h3>
+        </div>
+
+        <div class="search-box-wrapper">
+            <input type="text" id="search-msg" placeholder="Search.." name="search" class="search-box">
+            <button type="submit" class="micro-btn" onclick="recognitionSpeech()" ><img src="./assets/images/micro.jpeg" height=28 alt=""></button>
+            <button type="submit" class="search-btn" onclick="searchPhoto()"><img src="./assets/images/search.jpg" height=28 alt=""></button>
+            <p id="search-response"></p>
+            <div id="viewer"></div>
+
+        </div>
+
+
+        <script>
+            var sdk = apigClientFactory.newClient({apiKey:"UJfoR1WGns7iB4fqCgmuSa5z90rqVrGIaVAwFbdd", region: 'us-east-1'});
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+
+
+    </body>
+</html>

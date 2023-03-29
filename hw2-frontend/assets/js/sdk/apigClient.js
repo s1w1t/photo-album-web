@@ -53,7 +53,7 @@ apigClientFactory.newClient = function (config) {
 
     
     // extract endpoint and path from url
-    var invokeUrl = 'https://bsuufvf9n2.execute-api.us-east-1.amazonaws.com/s3';
+    var invokeUrl = 'https://nom21di0c9.execute-api.us-east-1.amazonaws.com/s1';
     var endpoint = /(^https?:\/\/[^\/]+)/g.exec(invokeUrl)[1];
     var pathComponent = invokeUrl.substring(endpoint.length);
 
@@ -140,11 +140,11 @@ apigClientFactory.newClient = function (config) {
     apigClient.uploadBucketKeyOptions = function (params, body, additionalParams) {
         if(additionalParams === undefined) { additionalParams = {}; }
         
-        apiGateway.core.utils.assertParametersDefined(params, ['key', 'bucket'], ['body']);
+        apiGateway.core.utils.assertParametersDefined(params, [], ['body']);
         
         var uploadBucketKeyOptionsRequest = {
             verb: 'options'.toUpperCase(),
-            path: pathComponent + uritemplate('/upload/{bucket}/{key}').expand(apiGateway.core.utils.parseParametersToObject(params, ['key', 'bucket'])),
+            path: pathComponent + uritemplate('/upload/{bucket}/{key}').expand(apiGateway.core.utils.parseParametersToObject(params, [])),
             headers: apiGateway.core.utils.parseParametersToObject(params, []),
             queryParams: apiGateway.core.utils.parseParametersToObject(params, []),
             body: body

@@ -8,9 +8,8 @@ s3 = boto3.client('s3')
 rekognition = boto3.client('rekognition')
 opensearch = boto3.client('es')
 index = "photos"
-domain = "search-photos-2ziokdudvmpcxoxavaqgtditzi"
+domain = "search-photos-cf-cval6oo6erd4eb3s776smbmf74"
 region = "us-east-1"
-# model = "arn:aws:rekognition:us-east-1:115482439616:project/my_types/version/my_types.2023-03-22T00.16.22/1679458582288"
 
 def lambda_handler(event, context):
 

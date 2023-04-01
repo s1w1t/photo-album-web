@@ -6,7 +6,7 @@ import requests
 import inflection
 
 region = 'us-east-1'
-host = 'search-photos-2ziokdudvmpcxoxavaqgtditzi.us-east-1.es.amazonaws.com'
+host = 'search-photos-cf-cval6oo6erd4eb3s776smbmf74.us-east-1.es.amazonaws.com'
 bucket_name = 'p-b2'
 
 # Create an OpenSearch client object with AWS credentials
@@ -22,8 +22,7 @@ def lambda_handler(event, context):
     # Extract the search query from the API Gateway event
     print(event)
     query = event['queryStringParameters']['q']
-    # query = "show me city and building"
-    # Call Amazon Lex to disambiguate the search query
+
     lex = boto3.client('lexv2-runtime')
     lex_response = lex.recognize_text(botId='HMGLSHPULC',
         botAliasId='1N7NLO6S0Y',
@@ -47,7 +46,7 @@ def lambda_handler(event, context):
         keywords = [inflection.singularize(word) for word in keywords]
         print(keywords)
 
-        url = "https://search-photos-2ziokdudvmpcxoxavaqgtditzi.us-east-1.es.amazonaws.com/photos/_search?q="
+        url = "https://search-photos-cf-cval6oo6erd4eb3s776smbmf74.us-east-1.es.amazonaws.com/photos/_search?q="
         headers = {'Content-Type': 'application/json'}
         response = []
         for key in keywords:

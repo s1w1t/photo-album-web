@@ -7,7 +7,7 @@ import inflection
 
 region = 'us-east-1'
 host = 'search-photos-cf-cval6oo6erd4eb3s776smbmf74.us-east-1.es.amazonaws.com'
-bucket_name = 'p-b2'
+bucket_name = 'photos-cf-b-2'
 
 # Create an OpenSearch client object with AWS credentials
 def get_awsauth(region, service):

@@ -19,7 +19,7 @@ function uploadPhoto(){
             sdk.uploadBucketKeyPut(
                 {'x-amz-meta-customLabels': customLabel,
                 'key': filename, 
-                'bucket': 'p-b2'}, 
+                'bucket': 'photos-cf-b-2'}, 
                 base64Data,
                 {"headers":{"Content-Type": file.type}}
             )

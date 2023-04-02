@@ -29,10 +29,11 @@ def lambda_handler(event, context):
     labels = [label['Name'] for label in response_rekognition['Labels']]
     print(labels)
 
-    custom_labels = response_s3['Metadata']['customlabels'].split(',')
-    print(custom_labels)
-    if custom_labels:
-        labels += custom_labels 
+    if len(response_s3['Metadata']['customlabels']) > 0:
+        custom_labels = response_s3['Metadata']['customlabels'].split(',')
+        print(custom_labels)
+        if custom_labels:
+            labels += custom_labels 
         
     labels = [label.lower() for label in labels] 
          

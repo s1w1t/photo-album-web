@@ -1,24 +1,21 @@
 ---
 swagger: "2.0"
 info:
-  description: "AI Photo Search application, built during the Cloud and Big Data course\
-    \ at Columbia University."
-  version: "1.0.0"
-  title: "Photo Search"
-host: "bsuufvf9n2.execute-api.us-east-1.amazonaws.com"
-basePath: "/s3"
+  version: "2023-04-01T19:00:20Z"
+  title: "photo-album-cloudformation-API"
+host: "83do5batbh.execute-api.us-east-1.amazonaws.com"
+basePath: "/s1"
 schemes:
 - "https"
 paths:
   /search:
     get:
-      operationId: "searchPhotos"
       produces:
       - "application/json"
       parameters:
       - name: "q"
         in: "query"
-        required: false
+        required: true
         type: "string"
       responses:
         "200":
@@ -28,14 +25,6 @@ paths:
           headers:
             Access-Control-Allow-Origin:
               type: "string"
-        "500":
-          description: "500 response"
-          schema:
-            $ref: "#/definitions/Error"
-        "403":
-          description: "403 response"
-          schema:
-            $ref: "#/definitions/Error"
       security:
       - api_key: []
     options:
@@ -66,13 +55,13 @@ paths:
         type: "string"
       - name: "x-amz-meta-customLabels"
         in: "header"
-        required: false
+        required: true
         type: "string"
       responses:
         "200":
           description: "200 response"
           schema:
-            $ref: "#/definitions/MODEL95d364"
+            $ref: "#/definitions/UploadResponse"
           headers:
             Access-Control-Allow-Origin:
               type: "string"
@@ -80,25 +69,19 @@ paths:
               type: "string"
             Access-Control-Allow-Headers:
               type: "string"
-        "500":
-          description: "500 response"
-          schema:
-            $ref: "#/definitions/Error"
-        "403":
-          description: "403 response"
-          schema:
-            $ref: "#/definitions/Error"
       security:
       - api_key: []
     options:
       consumes:
       - "application/json"
+      produces:
+      - "application/json"
       parameters:
-      - name: "key"
+      - name: "bucket"
         in: "path"
         required: true
         type: "string"
-      - name: "bucket"
+      - name: "key"
         in: "path"
         required: true
         type: "string"
@@ -118,24 +101,7 @@ securityDefinitions:
     name: "x-api-key"
     in: "header"
 definitions:
-  Error:
-    type: "object"
-    properties:
-      code:
-        type: "integer"
-        format: "int32"
-      message:
-        type: "string"
-  Photo:
-    type: "object"
-    properties:
-      url:
-        type: "string"
-      labels:
-        type: "array"
-        items:
-          type: "string"
-  MODEL95d364:
+  UploadResponse:
     type: "object"
   SearchResponse:
     type: "object"
@@ -143,4 +109,11 @@ definitions:
       results:
         type: "array"
         items:
-          $ref: "#/definitions/Photo"
+          type: "object"
+          properties:
+            items:
+              type: "string"
+            url:
+              type: "string"
+            labels:
+              type: "array"

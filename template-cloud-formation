@@ -1,0 +1,962 @@
+AWSTemplateFormatVersion: 2010-09-09
+Metadata:
+  'AWS::CloudFormation::Designer':
+    eacd76bb-8000-4ef0-a6dc-1a06eb25e72e:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 900
+        'y': 390
+      z: 1
+      embeds: []
+    d2a83d2e-0c06-4ef9-9686-9d6000b2f16a:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 1110
+        'y': 390
+      z: 1
+      embeds: []
+      isassociatedwith:
+        - eacd76bb-8000-4ef0-a6dc-1a06eb25e72e
+    68643a31-d6cf-420d-87f2-04c314168ab2:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 900
+        'y': 300
+      z: 1
+      embeds: []
+    f3b323ac-084c-4a66-9345-e5d4e4bbb1a3:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 1110
+        'y': 300
+      z: 1
+      embeds: []
+      isassociatedwith:
+        - 68643a31-d6cf-420d-87f2-04c314168ab2
+    cb92f93f-96ed-4cf4-a3ab-1d9c79538ef3:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 630
+        'y': 570
+      z: 1
+      embeds: []
+    750d5575-e417-459d-8403-9e2d834e8273:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 780
+        'y': 450
+      z: 1
+      embeds: []
+    210a3bc9-dfe7-4cd4-9f5f-7fe3a9a60a9a:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 780
+        'y': 570
+      z: 1
+      embeds: []
+    0c4fd749-1632-4295-a586-337f30dbdb6f:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 630
+        'y': 450
+      z: 1
+      embeds: []
+    89c812dc-1669-43ff-a47e-5494c51c9541:
+      size:
+        width: 530
+        height: 480
+      position:
+        x: -540
+        'y': 390
+      z: 1
+      embeds:
+        - 6aeba97d-fb20-4d79-910d-2eddd0a56ee0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+    65fa1d03-c311-420d-96fa-6c3f7cdef0d0:
+      size:
+        width: 150
+        height: 300
+      position:
+        x: -180
+        'y': 480
+      z: 2
+      parent: 89c812dc-1669-43ff-a47e-5494c51c9541
+      embeds:
+        - 6a6a94d5-6754-4f59-9afc-c5d0d587551d
+        - 9270967e-5579-48a1-abd0-801a21954eb2
+    9270967e-5579-48a1-abd0-801a21954eb2:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -130
+        'y': 520
+      z: 3
+      parent: 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+      embeds: []
+      iscontainedinside:
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+    c9786de0-1deb-473b-a151-af5e914bc082:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -370
+        'y': 680
+      z: 5
+      parent: 3c758986-372e-4081-a175-90e891a99bbf
+      embeds: []
+      iscontainedinside:
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 3c758986-372e-4081-a175-90e891a99bbf
+        - 3c758986-372e-4081-a175-90e891a99bbf
+        - 3c758986-372e-4081-a175-90e891a99bbf
+        - 3c758986-372e-4081-a175-90e891a99bbf
+        - 76dc71d1-2658-43d2-8478-11ce9a21cbbe
+    9166fb86-0431-44c5-9f23-eecc70525789:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 320
+        'y': 320
+      z: 1
+      embeds: []
+    6b76c12a-025f-435b-b3fc-f3639ae4a745:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 660
+        'y': 690
+      z: 1
+      embeds: []
+      isassociatedwith:
+        - cb92f93f-96ed-4cf4-a3ab-1d9c79538ef3
+    b7c88ce2-fdbf-466e-a6ea-1dc36b91c883:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 600
+        'y': 330
+      z: 1
+      embeds: []
+      isassociatedwith:
+        - 0c4fd749-1632-4295-a586-337f30dbdb6f
+    b2d1ccdd-2a5a-4e81-a631-3402fff40cf3:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 690
+        'y': 330
+      z: 1
+      embeds: []
+      isassociatedwith:
+        - 0c4fd749-1632-4295-a586-337f30dbdb6f
+    cf00ef38-3931-4b60-8a9a-41c797f80aa4:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -370
+        'y': 590
+      z: 5
+      parent: 3c758986-372e-4081-a175-90e891a99bbf
+      embeds: []
+      iscontainedinside:
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 3c758986-372e-4081-a175-90e891a99bbf
+        - 3c758986-372e-4081-a175-90e891a99bbf
+        - 3c758986-372e-4081-a175-90e891a99bbf
+        - 3c758986-372e-4081-a175-90e891a99bbf
+        - 3c758986-372e-4081-a175-90e891a99bbf
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 76dc71d1-2658-43d2-8478-11ce9a21cbbe
+    6a6a94d5-6754-4f59-9afc-c5d0d587551d:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -140
+        'y': 630
+      z: 3
+      parent: 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+      embeds: []
+      iscontainedinside:
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 89c812dc-1669-43ff-a47e-5494c51c9541
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 76dc71d1-2658-43d2-8478-11ce9a21cbbe
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+        - 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+    d3b2d6ff-ffb0-4610-b38b-3bf04188628b:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 470
+        'y': 580
+      z: 0
+      embeds: []
+      isassociatedwith:
+        - cb92f93f-96ed-4cf4-a3ab-1d9c79538ef3
+    ee067615-ba77-486c-ac6d-4ebd9e5a38f9:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 460
+        'y': 430
+      z: 0
+      embeds: []
+      isassociatedwith:
+        - 0c4fd749-1632-4295-a586-337f30dbdb6f
+      dependson:
+        - 9270967e-5579-48a1-abd0-801a21954eb2
+    a7022edd-c593-43b1-b877-e6d279433605:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 170
+        'y': 320
+      z: 0
+      embeds: []
+    3c758986-372e-4081-a175-90e891a99bbf:
+      size:
+        width: 110
+        height: 260
+      position:
+        x: -400
+        'y': 520
+      z: 4
+      parent: 76dc71d1-2658-43d2-8478-11ce9a21cbbe
+      embeds:
+        - cf00ef38-3931-4b60-8a9a-41c797f80aa4
+        - c9786de0-1deb-473b-a151-af5e914bc082
+    35bba4e0-340f-4345-a5ab-96af4a058958:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 160
+        'y': 710
+      z: 0
+      embeds: []
+    6aeba97d-fb20-4d79-910d-2eddd0a56ee0:
+      size:
+        width: 270
+        height: 340
+      position:
+        x: -490
+        'y': 460
+      z: 2
+      parent: 89c812dc-1669-43ff-a47e-5494c51c9541
+      embeds:
+        - 76dc71d1-2658-43d2-8478-11ce9a21cbbe
+    76dc71d1-2658-43d2-8478-11ce9a21cbbe:
+      size:
+        width: 210
+        height: 320
+      position:
+        x: -470
+        'y': 470
+      z: 3
+      parent: 6aeba97d-fb20-4d79-910d-2eddd0a56ee0
+      embeds:
+        - 3c758986-372e-4081-a175-90e891a99bbf
+    7d197ecb-89ab-4e08-ba3a-02827618c942:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -780
+        'y': 250
+      z: 0
+      embeds: []
+    4341ac57-ca76-4472-943e-f9fec5707a36:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -780
+        'y': 350
+      z: 0
+      embeds: []
+    38bf2a9e-60cb-462d-9e56-5f75bb2731e7:
+      source:
+        id: ee067615-ba77-486c-ac6d-4ebd9e5a38f9
+      target:
+        id: 9270967e-5579-48a1-abd0-801a21954eb2
+      z: 6
+Resources:
+  photoBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: photos-cf-b-2
+      CorsConfiguration:
+        CorsRules:
+          - AllowedHeaders:
+              - '*'
+            AllowedMethods:
+              - HEAD
+              - GET
+              - PUT
+            AllowedOrigins:
+              - '*'
+            ExposedHeaders: []
+      NotificationConfiguration:
+        LambdaConfigurations:
+          - Event: 's3:ObjectCreated:*'
+            Function: !GetAtt 
+              - LF1
+              - Arn
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: eacd76bb-8000-4ef0-a6dc-1a06eb25e72e
+  photoBucketPolicy:
+    Type: 'AWS::S3::BucketPolicy'
+    Properties:
+      Bucket: !Ref photoBucket
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Sid: AWSRekognitionS3AclBucketRead20191011
+            Effect: Allow
+            Principal:
+              Service: rekognition.amazonaws.com
+            Action:
+              - 's3:GetBucketAcl'
+              - 's3:GetBucketLocation'
+            Resource: 'arn:aws:s3:::photos-cf-b-2'
+          - Sid: AWSRekognitionS3GetBucket20191011
+            Effect: Allow
+            Principal:
+              Service: rekognition.amazonaws.com
+            Action:
+              - 's3:GetObject'
+              - 's3:GetObjectAcl'
+              - 's3:GetObjectVersion'
+              - 's3:GetObjectTagging'
+            Resource: 'arn:aws:s3:::photos-cf-b-2/*'
+          - Sid: AWSRekognitionS3ACLBucketWrite20191011
+            Effect: Allow
+            Principal:
+              Service: rekognition.amazonaws.com
+            Action: 's3:GetBucketAcl'
+            Resource: 'arn:aws:s3:::photos-cf-b-2'
+          - Sid: AWSRekognitionS3PutObject20191011
+            Effect: Allow
+            Principal:
+              Service: rekognition.amazonaws.com
+            Action: 's3:PutObject'
+            Resource: 'arn:aws:s3:::photos-cf-b-2/*'
+            Condition:
+              StringEquals:
+                's3:x-amz-acl': bucket-owner-full-control
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: d2a83d2e-0c06-4ef9-9686-9d6000b2f16a
+  FrontendBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: photos-cf-b-1
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+      WebsiteConfiguration:
+        IndexDocument: hello.html
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 68643a31-d6cf-420d-87f2-04c314168ab2
+  FeBucketPolicy:
+    Type: 'AWS::S3::BucketPolicy'
+    Properties:
+      Bucket: !Ref FrontendBucket
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Sid: PublicReadGetObject
+            Effect: Allow
+            Principal: '*'
+            Action: 's3:GetObject'
+            Resource: 'arn:aws:s3:::photos-cf-b-1/*'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: f3b323ac-084c-4a66-9345-e5d4e4bbb1a3
+  LF1:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      FunctionName: LF1-CF
+      Role: !GetAtt 
+        - LF1Role
+        - Arn
+      Runtime: python3.9
+      Handler: lambda_function.lambda_handler
+      Code:
+        ZipFile: |
+          def lambda_handler(event, context):
+            return {
+              "statusCode": 200,
+              "body": json.generate('Hello from Lambda'),
+            }
+      Timeout: 10
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: cb92f93f-96ed-4cf4-a3ab-1d9c79538ef3
+  LF1Role:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: 'sts:AssumeRole'
+      Policies:
+        - PolicyName: s3
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 's3:Get*'
+                Resource:
+                  - 'arn:aws:s3:::photos-cf-b-2'
+                  - 'arn:aws:s3:::photos-cf-b-2/*'
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/AWSLambdaExecute'
+        - 'arn:aws:iam::aws:policy/AmazonS3FullAccess'
+        - 'arn:aws:iam::aws:policy/AmazonOpenSearchServiceFullAccess'
+        - 'arn:aws:iam::aws:policy/AmazonRekognitionFullAccess'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 210a3bc9-dfe7-4cd4-9f5f-7fe3a9a60a9a
+  LF2:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      FunctionName: LF2-CF
+      Role: !GetAtt 
+        - LF2Role
+        - Arn
+      Runtime: python3.9
+      Handler: lambda_function.lambda_handler
+      Code:
+        ZipFile: |
+          def lambda_handler(event, context):
+            return {
+              "statusCode": 200,
+              "headers": {
+                  "Access-Control-Allow-Headers": "Content-Type",
+                  "Access-Control-Allow-Origin": "*",
+                  "Access-Control-Allow-Methods": "OPTIONS,PUT,GET",
+              },
+              "body": json.dumps('hello from lf2'),
+            }
+      Timeout: 10
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 0c4fd749-1632-4295-a586-337f30dbdb6f
+  LF2Role:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+                - apigateway.amazonaws.com
+            Action: 'sts:AssumeRole'
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/AWSLambdaExecute'
+        - 'arn:aws:iam::aws:policy/AmazonS3FullAccess'
+        - 'arn:aws:iam::aws:policy/AmazonOpenSearchServiceFullAccess'
+        - 'arn:aws:iam::aws:policy/AmazonLexFullAccess'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 750d5575-e417-459d-8403-9e2d834e8273
+  APIGATEWAY:
+    Type: 'AWS::ApiGateway::RestApi'
+    Properties:
+      Name: photo-album-cloudformation-API
+      EndpointConfiguration:
+        Types:
+          - REGIONAL
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 89c812dc-1669-43ff-a47e-5494c51c9541
+  GETRESOURCE:
+    Type: 'AWS::ApiGateway::Resource'
+    Properties:
+      ParentId: !GetAtt 
+        - APIGATEWAY
+        - RootResourceId
+      RestApiId: !Ref APIGATEWAY
+      PathPart: search
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 65fa1d03-c311-420d-96fa-6c3f7cdef0d0
+  SEARCHPHOTO:
+    Type: 'AWS::ApiGateway::Method'
+    Properties:
+      AuthorizationType: NONE
+      RestApiId: !Ref APIGATEWAY
+      ApiKeyRequired: true
+      HttpMethod: GET
+      RequestParameters:
+        method.request.querystring.q: true
+      Integration:
+        Type: AWS_PROXY
+        IntegrationHttpMethod: GET
+        IntegrationResponses:
+          - StatusCode: 200
+        Uri: !Sub 
+          - >-
+            arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/${lambdaArn}/invocations
+          - lambdaArn: !GetAtt 
+              - LF2
+              - Arn
+      MethodResponses:
+        - StatusCode: 200
+          ResponseModels:
+            application/json: SearchResponse
+          ResponseParameters:
+            method.response.header.Access-Control-Allow-Origin: true
+      ResourceId: !Ref GETRESOURCE
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 9270967e-5579-48a1-abd0-801a21954eb2
+  PUTPHOTO:
+    Type: 'AWS::ApiGateway::Method'
+    Properties:
+      AuthorizationType: NONE
+      RestApiId: !Ref APIGATEWAY
+      ResourceId: !Ref KeyResource
+      ApiKeyRequired: true
+      HttpMethod: PUT
+      RequestParameters:
+        method.request.path.bucket: true
+        method.request.path.key: true
+        method.request.header.x-amz-meta-customLabels: true
+      Integration:
+        Type: AWS
+        Credentials: !GetAtt 
+          - APITOS3ROLE
+          - Arn
+        IntegrationHttpMethod: PUT
+        Uri: 'arn:aws:apigateway:us-east-1:s3:path/{bucket}/{key}'
+        RequestParameters:
+          integration.request.path.bucket: method.request.path.bucket
+          integration.request.path.key: method.request.path.key
+          integration.request.header.x-amz-meta-customLabels: method.request.header.x-amz-meta-customLabels
+        IntegrationResponses:
+          - StatusCode: 200
+            ResponseParameters:
+              method.response.header.Access-Control-Allow-Headers: >-
+                'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-Meta-CustomLabels'
+              method.response.header.Access-Control-Allow-Methods: '''OPTIONS,PUT'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            ResponseTemplates:
+              application/json: ''
+        PassthroughBehavior: WHEN_NO_TEMPLATES
+      MethodResponses:
+        - StatusCode: 200
+          ResponseModels:
+            application/json: UploadResponse
+          ResponseParameters:
+            method.response.header.Access-Control-Allow-Headers: true
+            method.response.header.Access-Control-Allow-Methods: true
+            method.response.header.Access-Control-Allow-Origin: true
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: c9786de0-1deb-473b-a151-af5e914bc082
+  OpenSearch:
+    Type: 'AWS::OpenSearchService::Domain'
+    Properties:
+      AccessPolicies:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS: '*'
+            Action: 'es:*'
+            Resource: !Sub 'arn:aws:es:${AWS::Region}:${AWS::AccountId}:domain/photos-cf/*'
+      AdvancedSecurityOptions:
+        Enabled: true
+        InternalUserDatabaseEnabled: true
+        MasterUserOptions:
+          MasterUserName: master
+          MasterUserPassword: qweIOP123*()
+      ClusterConfig:
+        InstanceCount: 1
+        InstanceType: t3.small.search
+        DedicatedMasterEnabled: false
+        WarmEnabled: false
+        ZoneAwarenessEnabled: false
+      DomainEndpointOptions:
+        CustomEndpointEnabled: false
+        EnforceHTTPS: true
+        TLSSecurityPolicy: Policy-Min-TLS-1-0-2019-07
+      DomainName: photos-cf
+      EBSOptions:
+        EBSEnabled: true
+        VolumeSize: 10
+        VolumeType: gp3
+      EncryptionAtRestOptions:
+        Enabled: true
+        KmsKeyId: !Ref Key
+      EngineVersion: OpenSearch_2.5
+      NodeToNodeEncryptionOptions:
+        Enabled: true
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 9166fb86-0431-44c5-9f23-eecc70525789
+  S3Permit:
+    Type: 'AWS::Lambda::Permission'
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: !Ref LF1
+      Principal: s3.amazonaws.com
+      SourceArn: 'arn:aws:s3:::photos-cf-b-2'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 6b76c12a-025f-435b-b3fc-f3639ae4a745
+  APIPERMIT:
+    Type: 'AWS::Lambda::Permission'
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: !Ref LF2
+      Principal: apigateway.amazonaws.com
+      SourceArn: !Sub >-
+        arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${GETRESOURCE}/*/*/*
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: b7c88ce2-fdbf-466e-a6ea-1dc36b91c883
+  BOTPERMIT:
+    Type: 'AWS::Lambda::Permission'
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: LF2
+      Principal: lex.amazonaws.com
+      SourceArn: !Sub 'arn:aws:lex:${AWS::Region}:${AWS::AccountId}:bot/HMGLSHPULC/1N7NLO6S0Y'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: b2d1ccdd-2a5a-4e81-a631-3402fff40cf3
+  LF1OPTION:
+    Type: 'AWS::ApiGateway::Method'
+    Properties:
+      AuthorizationType: NONE
+      ResourceId: !Ref KeyResource
+      RestApiId: !Ref APIGATEWAY
+      HttpMethod: OPTIONS
+      ApiKeyRequired: false
+      Integration:
+        Type: MOCK
+        IntegrationResponses:
+          - StatusCode: 200
+            ResponseParameters:
+              method.response.header.Access-Control-Allow-Headers: >-
+                'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-Meta-CustomLabels'
+              method.response.header.Access-Control-Allow-Methods: '''OPTIONS,PUT'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            ResponseTemplates:
+              application/json: ''
+        PassthroughBehavior: WHEN_NO_TEMPLATES
+        RequestTemplates:
+          application/json: '{"statusCode": 200}'
+      MethodResponses:
+        - StatusCode: 200
+          ResponseParameters:
+            method.response.header.Access-Control-Allow-Headers: true
+            method.response.header.Access-Control-Allow-Methods: true
+            method.response.header.Access-Control-Allow-Origin: true
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: cf00ef38-3931-4b60-8a9a-41c797f80aa4
+  LF2OPTION:
+    Type: 'AWS::ApiGateway::Method'
+    Properties:
+      AuthorizationType: NONE
+      ResourceId: !Ref GETRESOURCE
+      RestApiId: !Ref APIGATEWAY
+      HttpMethod: OPTIONS
+      ApiKeyRequired: false
+      Integration:
+        Type: MOCK
+        IntegrationResponses:
+          - StatusCode: 200
+            ResponseParameters:
+              method.response.header.Access-Control-Allow-Headers: >-
+                'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-Meta-CustomLabels'
+              method.response.header.Access-Control-Allow-Methods: '''OPTIONS,GET'''
+              method.response.header.Access-Control-Allow-Origin: '''*'''
+            ResponseTemplates:
+              application/json: ''
+        PassthroughBehavior: WHEN_NO_TEMPLATES
+        RequestTemplates:
+          application/json: '{"statusCode": 200}'
+      MethodResponses:
+        - StatusCode: 200
+          ResponseParameters:
+            method.response.header.Access-Control-Allow-Headers: true
+            method.response.header.Access-Control-Allow-Methods: true
+            method.response.header.Access-Control-Allow-Origin: true
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 6a6a94d5-6754-4f59-9afc-c5d0d587551d
+  LF1OPEN:
+    Type: 'AWS::Lambda::Permission'
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: !Ref LF1
+      Principal: apigateway.amazonaws.com
+      SourceArn: !GetAtt 
+        - OpenSearch
+        - Arn
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: d3b2d6ff-ffb0-4610-b38b-3bf04188628b
+  LF2OPEN:
+    Type: 'AWS::Lambda::Permission'
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: !Ref LF2
+      Principal: apigateway.amazonaws.com
+      SourceArn: !GetAtt 
+        - OpenSearch
+        - Arn
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: ee067615-ba77-486c-ac6d-4ebd9e5a38f9
+    DependsOn:
+      - SEARCHPHOTO
+  Key:
+    Type: 'AWS::KMS::Key'
+    Properties:
+      Enabled: true
+      KeyPolicy:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS: '*'
+            Action:
+              - 'kms:Encrypt'
+              - 'kms:Decrypt'
+              - 'kms:ReEncrypt*'
+              - 'kms:GenerateDataKey*'
+              - 'kms:CreateGrant'
+              - 'kms:DescribeKey'
+            Resource: '*'
+            Condition:
+              StringEquals:
+                'kms:ViaService': !Sub 'es.${AWS::Region}.amazonaws.com'
+                'kms:CallerAccount': !Ref 'AWS::AccountId'
+          - Effect: Allow
+            Principal:
+              AWS: !Sub 'arn:aws:iam::${AWS::AccountId}:root'
+            Action: '*'
+            Resource: '*'
+          - Effect: Allow
+            Principal:
+              Service: es.amazonaws.com
+            Action:
+              - 'kms:Describe*'
+              - 'kms:Get*'
+              - 'kms:List*'
+            Resource: '*'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: a7022edd-c593-43b1-b877-e6d279433605
+  PUTRESOURCE:
+    Type: 'AWS::ApiGateway::Resource'
+    Properties:
+      ParentId: !GetAtt 
+        - APIGATEWAY
+        - RootResourceId
+      RestApiId: !Ref APIGATEWAY
+      PathPart: upload
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 3c758986-372e-4081-a175-90e891a99bbf
+  APITOS3ROLE:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - apigateway.amazonaws.com
+                - s3.amazonaws.com
+                - lambda.amazonaws.com
+            Action: 'sts:AssumeRole'
+      Policies:
+        - PolicyName: api-gateway-to-s3-cloudformation
+          PolicyDocument:
+            Statement:
+              - Sid: VisualEditor0
+                Effect: Allow
+                Action: 's3:PutObject'
+                Resource: 'arn:aws:s3:::photos-cf-b-2/*'
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/AmazonS3FullAccess'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 35bba4e0-340f-4345-a5ab-96af4a058958
+  BucketResource:
+    Type: 'AWS::ApiGateway::Resource'
+    Properties:
+      ParentId: !Ref PUTRESOURCE
+      RestApiId: !Ref APIGATEWAY
+      PathPart: '{bucket}'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 6aeba97d-fb20-4d79-910d-2eddd0a56ee0
+  KeyResource:
+    Type: 'AWS::ApiGateway::Resource'
+    Properties:
+      ParentId: !Ref BucketResource
+      RestApiId: !Ref APIGATEWAY
+      PathPart: '{key}'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 76dc71d1-2658-43d2-8478-11ce9a21cbbe
+  UploadModel:
+    Type: 'AWS::ApiGateway::Model'
+    Properties:
+      Name: UploadResponse
+      RestApiId: !Ref APIGATEWAY
+      ContentType: application/json
+      Schema:
+        type: object
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 7d197ecb-89ab-4e08-ba3a-02827618c942
+  SearchModel:
+    Type: 'AWS::ApiGateway::Model'
+    Properties:
+      Name: SearchResponse
+      RestApiId: !Ref APIGATEWAY
+      ContentType: application/json
+      Schema:
+        type: object
+        properties:
+          results:
+            type: array
+            items:
+              type: object
+              properties:
+                url:
+                  type: string
+                labels:
+                  type: array
+                items:
+                  type: string
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 4341ac57-ca76-4472-943e-f9fec5707a36

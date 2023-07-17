@@ -1,4 +1,4 @@
-# assignment2-codepipeline
+# Photo Album Web APP
 
 Names and Unis: Shiwen Tang (st3510), Siyi Hong (sh4325)
 
